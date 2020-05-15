@@ -65,6 +65,7 @@ body {
   font-family: "Courier New", "Courier", monospace;
   line-height: 1.4;
 
+  width: 80%;
   max-width: 800px;
   margin: 20px auto;
   padding: 0 10px;
@@ -588,6 +589,7 @@ img {
   height: auto;
   border-radius: 5px;
   border: 1px solid var(--border);
+  transition: var(--animation-duration);
 }
 
 hr {
