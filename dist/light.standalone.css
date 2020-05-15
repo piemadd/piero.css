@@ -101,9 +101,7 @@ p {
 	border-radius: var(--border-radius);
 	border: 0px;
 	transition: var(--animation-duration);
-	width: -webkit-max-content;
-	width: -moz-max-content;
-	width: max-content;
+	width: 100%;
 }
 
 q {
@@ -581,8 +579,6 @@ td,
 th {
   padding: 6px;
   text-align: left;
-  border-bottom: 1px solid #dbdbdb;
-  transition: 0.3s;
 }
 
 thead {
