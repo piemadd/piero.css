@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Piero Maddaleni</title>
         <meta name="description" content="The personal site of Piero Maddaleni!">
-        <link rel="stylesheet" href="/piero.dark.min.css">
+        <link rel="stylesheet" href="/dist/dark.min.css">
     </head>
     <body>
 		<h1>Piero.css</h1>
@@ -23,7 +23,203 @@
 				</tr>
 		</table>
 		<h2>All of the Stuff</h2>
-		<p>So at this point, you're probably wondering what 
+		<p>So at this point, you're probably wondering what this framwork can do. The following are all of the current elements in a demo.</p>
+		<h3>Form elements</h3>
+    <form>
+
+      <fieldset>
+        <legend>Fieldset</legend>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="john.doe@gmail.com" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="password" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACIUlEQVQ4EX2TOYhTURSG87IMihDsjGghBhFBmHFDHLWwSqcikk4RRKJgk0KL7C8bMpWpZtIqNkEUl1ZCgs0wOo0SxiLMDApWlgOPrH7/5b2QkYwX7jvn/uc//zl3edZ4PPbNGvF4fC4ajR5VrNvt/mo0Gr1ZPOtfgWw2e9Lv9+chX7cs64CS4Oxg3o9GI7tUKv0Q5o1dAiTfCgQCLwnOkfQOu+oSLyJ2A783HA7vIPLGxX0TgVwud4HKn0nc7Pf7N6vV6oZHkkX8FPG3uMfgXC0Wi2vCg/poUKGGcagQI3k7k8mcp5slcGswGDwpl8tfwGJg3xB6Dvey8vz6oH4C3iXcFYjbwiDeo1KafafkC3NjK7iL5ESFGQEUF7Sg+ifZdDp9GnMF/KGmfBdT2HCwZ7TwtrBPC7rQaav6Iv48rqZwg+F+p8hOMBj0IbxfMdMBrW5pAVGV/ztINByENkU0t5BIJEKRSOQ3Aj+Z57iFs1R5NK3EQS6HQqF1zmQdzpFWq3W42WwOTAf1er1PF2USFlC+qxMvFAr3HcexWX+QX6lUvsKpkTyPSEXJkw6MQ4S38Ljdbi8rmM/nY+CvgNcQqdH6U/xrYK9t244jZv6ByUOSiDdIfgBZ12U6dHEHu9TpdIr8F0OP692CtzaW/a6y3y0Wx5kbFHvGuXzkgf0xhKnPzA4UTyaTB8Ph8AvcHi3fnsrZ7Wore02YViqVOrRXXPhfqP8j6MYlawoAAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+
+        <p>
+          <input type="checkbox" name="remember" id="remember" checked="">
+          <label for="remember">Remember me</label>
+        </p>
+
+        <input type="submit">
+      </fieldset>
+
+      <label for="id">User id (read only)</label>
+      <input readonly="" name="id" id="id" value="04D6H89Z">
+
+      <label for="disabled">Random disabled input</label>
+      <input disabled="" name="disabled" id="disabled" placeholder="Because why not?">
+
+      <label for="about">About me</label>
+      <textarea name="about" id="about" placeholder="I am a textarea..."></textarea>
+
+      <label for="drink">Select your favorite drink</label>
+      <select name="drinks" id="drink">
+        <option value="mojito">Mojito</option>
+        <option value="water">Water</option>
+        <option value="lemon">Lemon juice</option>
+      </select>
+
+      <label for="drinks">Or select multiple favorite drinks</label>
+      <br>
+      <small>Hold down the Ctrl (Windows) /  Command (Mac) button to select multiple options. (P.S. this message is inside a <code>&lt;small&gt;</code> tag!</small>) 
+      <select name="drink" id="drinks" multiple="">
+        <option value="mojito">Mojito</option>
+        <option value="water">Water</option>
+        <option value="lemon">Lemon juice</option>
+      </select>
+
+      <label>Choose a Doe:</label>
+      <div>
+        <input type="radio" id="john" name="doe" value="john" checked="">
+        <label for="john">John Doe</label>
+      </div>
+      <div>
+        <input type="radio" id="jane" name="doe" value="jane" checked="">
+        <label for="jane">Jane Doe</label>
+      </div>
+      <div>
+        <input type="radio" id="johnny" name="doe" value="johnny" checked="">
+        <label for="johnny">Johnny Doe</label>
+      </div>
+      <div>
+        <input type="radio" id="doe" name="doe" value="doe" checked="">
+        <label for="doe">An actual doe</label>
+      </div>
+
+      <br>
+
+      <div>
+        <label for="volume">Volume</label>
+        <input type="range" name="volume" id="volume" min="0" max="11">
+      </div>
+    </form>
+
+    <h3>Code</h3>
+    <p>
+      Below is some code, with a variable, you can copy it with
+      <kbd>Ctrl-C</kbd>. Did you know, <code>alert(1)</code> can show an alert
+      in JavaScript!
+    </p>
+    <code>var <var>myNumber</var> = 0;</code>
+    <pre><code>// This logs a message to the console and check out the scrollbar.<br>console.log('Hello, world!')</code></pre>
+
+    <p>Here are some more keyboard buttons</p>
+    <p>
+      Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Print Screen</kbd> to take
+      a selected area screenshot on Linux.
+    </p>
+    <h3>Other</h3>
+    <p>
+      Here's a horizontal rule and image because I don't know where else to put
+      them.
+    </p>
+    <img src="https://placekitten.com/408/287" alt="Example kitten">
+    <hr>
+
+    <p>And here's a nicely marked up table!</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Godzilla</td>
+          <td>2</td>
+          <td>$299.99</td>
+        </tr>
+        <tr>
+          <td>Mozilla</td>
+          <td>10</td>
+          <td>$100,000.00</td>
+        </tr>
+        <tr>
+          <td>Quesadilla</td>
+          <td>1</td>
+          <td>$2.22</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Typography</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum
+      hendrerit velit, quis ullamcorper sem congue ac. Quisque id magna rhoncus,
+      sodales massa vel, vestibulum elit. Duis ornare accumsan egestas. Proin
+      maximus lacus interdum leo molestie convallis. Orci varius natoque
+      penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut
+      iaculis risus eu felis feugiat, eu mollis neque elementum. Donec interdum,
+      nisl id dignissim iaculis, felis dui aliquet dui, non fermentum velit
+      lectus ac quam. Class aptent taciti sociosqu ad litora torquent per
+      conubia nostra, per inceptos himenaeos.
+      <strong>This is strong,</strong> this is normal,
+      <b>this is just bold,</b> <em>and this is emphasized!</em> And heck,
+      <a href="/">here</a>'s a link.
+    </p>
+
+    <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+      'The HTML blockquote Element (or HTML Block Quotation Element) indicates
+      that the enclosed text is an extended quotation. Usually, this is rendered
+      visually by indentation (see
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote#Usage_notes">Notes</a>
+      for how to change it). A URL for the source of the quotation may be given
+      using the
+      <code>cite</code> attribute, while a text representation of the source can
+      be given using the <code>&lt;cite&gt;</code> cite element.'
+
+      <footer>
+        <cite>MDN, 'The Block Quotation element'</cite>
+      </footer>
+    </blockquote>
+
+    <q>Quotes (&lt;q&gt;) share the same style as blockquotes.</q>
+
+    <p>Use &lt;mark&gt; to <mark>highlight the important stuff</mark>.</p>
+
+    <ul>
+      <li>Unordered list item 1</li>
+      <li>Unordered list item 2</li>
+      <li>Unordered list item 3</li>
+    </ul>
+    <ol>
+      <li>Ordered list item 1</li>
+      <li>Ordered list item 2</li>
+      <li>Ordered list item 3</li>
+    </ol>
+
+    <p>Addresses are also styled to be <strong>awesome</strong>!</p>
+    <address>
+      <a href="mailto:john.doe@example.com">john.doe@example.com</a><br>
+      <a href="tel:778-330-2389">778-330-2389</a><br>
+      <a href="sms:666-666-6666">666-666-6666</a><br>
+    </address>
+
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <p>The details and summary tag</p>
+    <details>
+      <summary>Click to Open...</summary>
+      <p>The HTML Details Element (details) creates a disclosure widget in which information is visible only when the widget is toggled into an "open" state. A summary or label can be provided using the summary element.</p>
+    </details>
+
+    <details open="">
+      <summary>Click to Hide...</summary>
+      <p>The HTML Details Element (details) creates a disclosure widget in which information is visible only when the widget is toggled into an "open" state. A summary or label can be provided using the summary element.</p>
+    </details>
+
+	<h2>Getting Started</h2>
+	<p>The following are the basic, minified dark and light themes, but you can find the whole list of them <a href="https://github.com/pieromqwerty/piero.css_source/releases">here</a>.</p>
+	<p><link rel="stylesheet" href="https://piemadd.com/piero.css/dist/dark.min.css"></p>
+	<p><link rel="stylesheet" href="https://piemadd.com/piero.css/dist/light.min.css"></p>
         <footer><small>
 			<center>
         		Made with ❤️ by Piero Maddaleni<br>
