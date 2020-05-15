@@ -143,9 +143,7 @@ p {
 	border-radius: 5px;
 	border: 0px;
 	transition: 0.1s;
-	width: -webkit-max-content;
-	width: -moz-max-content;
-	width: max-content;
+	width: 100%;
 }
 
 q {
@@ -727,8 +725,6 @@ td,
 th {
   padding: 6px;
   text-align: left;
-  border-bottom: 1px solid #dbdbdb;
-  transition: 0.3s;
 }
 
 thead {
